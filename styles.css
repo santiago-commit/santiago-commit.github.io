@@ -1,0 +1,267 @@
+@font-face {
+	font-family: 'Gaegu';
+	src: url('./fonts/gaegu/Gaegu-Bold.ttf');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Gaegu';
+	src: url('./fonts/gaegu/Gaegu-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Gaegu';
+	font-weight: normal;
+	font-size: 20px;
+}
+
+body {
+	position: relative;
+	background-image: linear-gradient(to bottom left, violet, lightblue, violet, white);
+	background-size: cover;
+
+}
+/*
+body:before {
+	background-image: linear-gradient(to bottom left, violet, lightblue, violet, white);
+	background-size: cover;
+
+	content: "";
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+}
+*/
+.navbar {
+	position: fixed;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 220px;
+	left: -220px;
+	transition: all 100ms ease-in-out;
+	z-index: 1;
+}
+
+.navbar.active {
+	left: 0;
+}
+
+.navbar ul li {
+	padding: 15px 10px;
+	list-style: none;
+}
+
+.navbar ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar .toggle-button {
+	position: absolute;
+	left: 230px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.navbar .toggle-button span {
+	display: block;
+	width: 40px;
+	text-align: center;
+	font-size: 30px;
+}
+
+h1 {
+	font-family: 'Gaegu';
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: 'Gaegu';
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0;
+}
+
+h3 em {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 0.7em;
+}
+
+h4 {
+	font-family: 'Gaegu';
+	font-weight: normal;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.main {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.main-div {
+	width: 400px;
+	margin: 50px 0px 50px 0px;
+	display: flex;
+	flex-wrap: wrap;
+
+	align-content: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+.main-div button {
+	 border-radius: 30px;
+	 height: 50px;
+}
+
+.widget {
+	background-color: rgba(255, 255, 255, 0.65);
+	margin: 20px;
+	padding: 20px;
+	border-radius: 30px;
+	width: 300px;
+	height: 200px;
+}
+
+.watch {
+	background-color: rgba(255, 255, 255, 0.65);
+	margin: 20px;
+	padding: 12px;
+	border-radius: 50%;
+
+	background-image: linear-gradient(white, white), radial-gradient(circle at top left, violet, darkblue, cyan);
+  	background-origin: border-box;
+  	background-clip: content-box, border-box;
+
+	width: 300px;
+	height: 300px;
+
+	align-content: center;
+	text-align: center;
+}
+
+h5 {
+	font-family: 'Gaegu';
+	font-weight: bold;
+	font-size: 100px;
+	text-decoration: underline;
+}
+
+.checklist {
+	width: 350px;
+	height: 500px;
+}
+
+.checklist-content {
+	min-height: 85%;
+	padding-left: 10%;
+	padding-top: 10px;
+}
+
+.checklist-content ul li input {
+	border: none;
+	background-color: transparent;
+	background: transparent;
+	outline: none;
+	font-size: 1em;
+}
+
+.checklist-content input:hover {
+
+}
+
+
+.widget-2 {
+	border: solid 1px darkorchid;
+	color: darkorchid;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 30px;
+	width: 100px;
+	height: 100px;
+}
+
+.widget-3 {
+	background-image: url('./images/note.png');
+	border: solid 2px transparent;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 0px 0px 20px 0px;
+	width: 100px;
+	height: 100px;
+}
+
+.widget-4 {
+	background-image: url('./images/placeholder.jpg');
+	border: solid 2px transparent;
+	margin: 20px;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.plant-button {
+	border: none;
+	background-color: lightyellow;
+	color: #d2691e;
+	width: 100%;
+	font-family: 'Gaegu';
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0;
+}
+
+.plant-button:hover {
+	cursor: pointer;
+	background-color: #d2691e;
+	color: lightyellow;
+}
+
+.chrono-button-container {
+	text-align: center;
+}
+
+.chrono-button {
+	font-size: 1.2em;
+	padding: 0px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+}
+
+.chrono-button.active {
+	background-color: darkorchid;
+	color: white;
+}
+
+hr {
+	border: solid 1px rgba(210, 105, 30, 0.4);
+}
+
+.tape {
+	position: absolute;
+	top: -10px;
+	min-width: 150px;
+	height: 50px;
+}

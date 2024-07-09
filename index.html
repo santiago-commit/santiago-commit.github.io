@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Mental Garden</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=3.0" />
+		<link href = "styles.css" rel = "stylesheet" type = "text/css">
+	</head>
+	<body>
+		<nav class = "navbar">
+			<div class = "toggle-button">
+				<span>&#9776;</span>
+			</div>
+			<ul>
+				<li>Mental Garden</li>
+				<li><a href = "./notifications.html">🕭 Notifications</a></li>
+				<li><a href = "./settings.html">⚙ Settings</a></li>
+				<li><a href = "./times.html">⏱ Times</a></li>
+				<li><a href = "./achievements.html">🎖 Achievements</a></li>
+				<li><a href = "./statistics.html">⋰ Statistics</a></li>
+			</ul>
+		</nav>
+
+		<div class = "main">
+			<div class = "main-div">
+				<h1>⌂ Welcome Home!</h1>
+
+				<div id = "date" class = "widget">
+					<h3 id = "month"></h3>
+				</div>
+				<div id = "time" class = "widget-2">
+					<h3 id = "hour"></h3>
+				</div>
+				<div id = "notes" class = "widget-3">
+					<h4>Notes</h4>
+				</div>
+			</div>
+	
+			<div class = "main-div">
+				<div>
+					<div class = "widget-4">
+					</div>
+					<button class = "plant-button">Let's plant!</button>
+				</div>
+			</div>
+	
+			<div class = "main-div">
+				<img src = "./images/tape.png" class = "tape">
+				<div class = "widget checklist">
+					<h3>Checklist</h3>
+					<hr>
+					<div class = "checklist-content">
+						<ul>
+							<li><input onkeypress = "add_checklist_item(event)" id = "checklist-input" placeholder = "Add new item"></li>
+						</ul>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+
+		<script src = "./index.js"></script>
+	</body>
+</html>
+
+<script>
+	set_date()
+	show_time()
+	toggle_navbar()
+</script>
