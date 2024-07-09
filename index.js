@@ -70,7 +70,7 @@ function stop_timer() {
 }
 
 function restart_timer() {
-	document.getElementById("timer").innerHTML = "00:00"
+	document.getElementById("timer").innerHTML = "05:00"
 	clearInterval(global_timer)
 
 	var timer_button = document.querySelector(".timer-button")
